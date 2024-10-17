@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Finder</h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter ingredient or dish name..." required>
+            <select id="diet-filter">
+                <option value="">-- Filter by Diet --</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten free">Gluten Free</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="recipe-list"></div>
+        <div id="pagination"></div>
+
+        <h2>Favorite Recipes</h2>
+        <div id="favorite-recipes"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
